@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Нёрдс</title>
+  </head>
+  <body>
+
+    <!-- хедер -->
+    <header class="main-header">
+      <div class="container">
+        <a class="logo">
+          <img class="logo__img" href="#" src="#" alt="Nerds logo" width="160" height="65">
+        </a>
+        <nav class="main-header__nav">
+          <ul>
+            <li><a href="#">Студия</a></li>
+            <li><a href="#">Клиенты</a></li>
+            <li><a>Магазин</a></li>
+            <li><a href="#">Контакты</a></li>
+          </ul>
+        </nav>
+        <a href="#" class="main-header__busket">Корзина</a>
+      </div>
+    </header>
+
+    <!-- основное содержание -->
+    <main>
+
+      <!-- шапка-заглавие -->
+      <section class="welcome-block">
+        <h1 class="welcome-block__title">Магазин готовых шаблонов</h1>
+      </section>
+
+      <!-- каталог -->
+      <section class="catalog">
+        <!-- фильтр поиска -->
+        <section class="filter">
+          <div class="filter__price">
+            <p class="filter__title">Стоимость:</p>
+            <div class="range">
+              <div class="scale">
+                <div class="active-range"></div>
+              </div>
+              <div class="toggle min-toggle"></div>
+              <div class="toggle max-toggle"></div>
+            </div>
+            <div class="price-control">
+              <p>
+                от
+                <input class="min-price" type="text" value="0">
+                до
+                <input class="max-price" type="text" value="15 000">
+              </p>
+            </div>
+          </div>
+        </section>
+        <!-- результаты поиска -->
+        <section class="templates">
+          <!-- сортировка результатов -->
+          <div class="templates__nav">
+            <p class="templates__nav-title">Сортировать</p>
+            <ul class="templates__nav-list">
+              <li class="templates__nav-item">
+                <a href="#" class="templates__nav-link">по цене</a>
+              </li>
+              <li class="templates__nav-item">
+                <a href="#" class="templates__nav-link">по типу</a>
+              </li>
+              <li class="templates__nav-item">
+                <a href="#" class="templates__nav-link">по названию</a>
+              </li>
+            </ul>
+            <div class="sorting">
+              <a href="#" class="sorting__icon sorting__icon--down sorting__icon--active"></a>
+              <a href="#" class="sorting__icon sorting__icon--up sorting__icon--active"></a>
+            </div>
+          </div>
+          <!-- шаблоны -->
+          <div class="templates__items">
+            <article class="templates__item">
+              <div class="templates__item-header">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+              <img class="templates__item-img" src="" width="200" height="200" alt="Sedona">
+              <div class="templates__item-content">
+                <p class="templates__item-title">Sedona</p>
+                <p class="templates__item-text">Информационный сайт для туристов</p>
+                <a href="#" class="templates__item-price btn">9 900 руб.</a>
+              </div>
+            </article>
+            <article class="templates__item">
+              <div class="templates__item-header">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+              <img class="templates__item-img" src="" width="200" height="200" alt="Sedona">
+              <div class="templates__item-content">
+                <p class="templates__item-title">Pink</p>
+                <p class="templates__item-text">Информационный сайт для туристов</p>
+                <a href="#" class="templates__item-price btn">9 900 руб.</a>
+              </div>
+            </article>
+            <article class="templates__item">
+              <div class="templates__item-header">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+              <img class="templates__item-img" src="" width="200" height="200" alt="Sedona">
+              <div class="templates__item-content">
+                <p class="templates__item-title">Barbershop Borodinski</p>
+                <p class="templates__item-text">Информационный сайт для туристов</p>
+                <a href="#" class="templates__item-price btn">9 900 руб.</a>
+              </div>
+            </article>
+            <article class="templates__item">
+              <div class="templates__item-header">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+              <img class="templates__item-img" src="" width="200" height="200" alt="Sedona">
+              <div class="templates__item-content">
+                <p class="templates__item-title">магазин Мишка</p>
+                <p class="templates__item-text">Информационный сайт для туристов</p>
+                <a href="#" class="templates__item-price btn">9 900 руб.</a>
+              </div>
+            </article>
+            <article class="templates__item">
+              <div class="templates__item-header">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+              <img class="templates__item-img" src="" width="200" height="200" alt="Sedona">
+              <div class="templates__item-content">
+                <p class="templates__item-title">Курсы A+</p>
+                <p class="templates__item-text">Информационный сайт для туристов</p>
+                <a href="#" class="templates__item-price btn">9 900 руб.</a>
+              </div>
+            </article>
+            <article class="templates__item">
+              <div class="templates__item-header">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+              <img class="templates__item-img" src="" width="200" height="200" alt="Sedona">
+              <div class="templates__item-content">
+                <p class="templates__item-title">квас Кваст</p>
+                <p class="templates__item-text">Информационный сайт для туристов</p>
+                <a href="#" class="templates__item-price btn">9 900 руб.</a>
+              </div>
+            </article>
+          </div>
+          <!-- пагинация -->
+          <section class="pagination"></section>
+
+        </section>
+      </section>
+
+      <!-- контакты -->
+      <section class="contacts">
+        <div class="contacts__map"></div>
+        <div class="contacts__content">
+          <h4 class="contacts__title">Nёrds Design Studio</h4>
+          <p class="contacts__address">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+          <p>тел. <a class="contacts__phone" href="tel:+78122757575">+7 (812) 275-75-75</a></p>
+          <a href="#" class="contacts__btn btn">Напишите нам</a>
+        </div>
+        <!-- <section class="popup">
+          <p class="popup__welcome-text"><b>Напишите нам</b></p>
+        </section> -->
+      </section>
+
+    </main>
+
+    <!-- футер -->
+    <footer class="footer">
+      <div class="container">
+        <div class="social">
+          <ul>
+            <li><a href="#" class="social__btn social-btn--vk">Вконтакте</a></li>
+            <li><a href="#" class="social__btn social-btn--fb">Facebook</a></li>
+            <li><a href="#" class="social__btn social-btn--insta">Instagram</a></li>
+          </ul>
+        </div>
+        <div class="footer__promo">
+          <p class="footer__slogan">Давайте дружить, это выгодно!</p>
+          <p class="footer__discount">Скидка 10% для друзей из социальных сетей.</p>
+        </div>
+      </div>
+    </footer>
+
+  </body>
+</html>
