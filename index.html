@@ -12,12 +12,12 @@
         <a class="logo">
           <img class="logo__img" src="img/nerds-logo.svg" alt="дизайн-студия Nerds" width="160" height="65">
         </a>
-        <nav class="main-header__nav">
-          <ul class="main-menu">
-            <li class="main-menu__item"><a class="main-menu__link" href="#info">Студия</a></li>
-            <li class="main-menu__item"><a class="main-menu__link" href="#clients">Клиенты</a></li>
-            <li class="main-menu__item"><a class="main-menu__link" href="catalog.html">Магазин</a></li>
-            <li class="main-menu__item"><a class="main-menu__link" href="#contacts">Контакты</a></li>
+        <nav class="main-nav">
+          <ul class="main-nav__list">
+            <li class="main-nav__item"><a class="main-nav__link" href="#info">Студия</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="#clients">Клиенты</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="catalog.html">Магазин</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="#contacts">Контакты</a></li>
           </ul>
         </nav>
         <a href="#" class="main-header__busket">Корзина</a>
@@ -31,33 +31,33 @@
       <section class="slider">
         <div class="container">
           <!-- первый слайдер -->
-          <div class="slider-first">
-            <div class="slider-first__content">
-              <p class="slider-first__slogan">
+          <div class="slider__item slider__item--thoroughly">
+            <div class="slider__item-content">
+              <p class="slider__item-slogan">
                 <b>Долго, дорого, скурпулезно.</b>
               </p>
-              <p class="slider-first__text">Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
-              <a class="slider__btn btn" href="#">Узнать больше</a>
+              <p class="slider__item-text">Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
+              <a class="slider__item-btn btn" href="#">Узнать больше</a>
             </div>
           </div>
           <!-- второй слайдер -->
-          <div class="slider-second">
-            <div class="slider-second__content">
-              <p class="slider-second__slogan">
+          <div class="slider__item slider__item--maths">
+            <div class="slider__item-content">
+              <p class="slider__item-slogan">
                 <b>Любим математику как никто другой</b>
               </p>
-              <p class="slider-second__text">Немного креатива, только математические формулы для расчета идеальных пропорций.</p>
-              <a class="slider__btn btn" href="#">Узнать больше</a>
+              <p class="slider__item-text">Немного креатива, только математические формулы для расчета идеальных пропорций.</p>
+              <a class="slider__item-btn btn" href="#">Узнать больше</a>
             </div>
           </div>
           <!-- третий слайдер -->
-          <div class="slider-third">
-            <div class="slider-third__content">
-              <p class="slider-third__slogan">
+          <div class="slider__item slider__item--night">
+            <div class="slider__item-content">
+              <p class="slider__item-slogan">
                 <b>Только ночь, только хардкор</b>
               </p>
-              <p class="slider-third__text">Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
-              <a class="slider__btn btn" href="#">Узнать больше</a>
+              <p class="slider__item-text">Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
+              <a class="slider__item-btn btn" href="#">Узнать больше</a>
             </div>
           </div>
         </div>
@@ -66,31 +66,37 @@
       <!-- услуги -->
       <section class="service">
         <div class="container">
-          <h2 class="service__title visually-hidden">Наши услуги</h2>
+          <h2 class="service__title">Наши услуги</h2>
           <ul class="service__list">
             <li class="service__item">
-              <a href="#" class="service__wrapper" title="Веб-сайты">
-                <img src="img/illustration-1.png" alt="Веб-сайты" class="service__img">
+              <article class="service__item-wrap">
+                <a href="#" class="service__img-wrap">
+                  <img src="img/illustration-1.png" alt="Веб-сайты" class="service__img">
+                </a>
                 <h3 class="service__item-title">Веб-сайты</h3>
                 <p class="service__text">Мир никогда не будет прежним после того, как увидит ваш сайт!</p>
-                <button class="btn service__btn">Заказать</button>
-              </a>
+                <a class="btn service__btn" href="#">Заказать</a>
+              </article>
             </li>
             <li class="service__item">
-              <a href="#" class="service__wrapper" title="Приложения">
-                <img src="img/illustration-2.png" alt="Приложения" class="service__img">
+              <article class="service__item-wrap">
+                <a href="#" class="service__img-wrap">
+                  <img src="img/illustration-2.png" alt="Приложения" class="service__img">
+                </a>
                 <h3 class="service__item-title">Приложения</h3>
                 <p class="service__text">Покорите топ-10 приложений в AppStore и Google Play</p>
-                <button class="btn service__btn">Заказать</button>
-              </a>
+                <a class="btn service__btn" href="#">Заказать</a>
+              </article>
             </li>
             <li class="service__item">
-              <a href="#" class="service__wrapper" title="Презентации">
-                <img src="img/illustration-3.png" alt="Презентации" class="service__img">
+              <article class="service__item-wrap">
+                <a href="#" class="service__img-wrap">
+                  <img src="img/illustration-3.png" alt="Презентации" class="service__img">
+                </a>
                 <h3 class="service__item-title">Презентации</h3>
                 <p class="service__text">Вы даже не представляете, насколько вы изумительны!</p>
-                <button class="btn service__btn">Заказать</button>
-              </a>
+                <a class="btn service__btn" href="#">Заказать</a>
+              </article>
             </li>
           </ul>
         </div>
@@ -99,32 +105,32 @@
       <!-- о компании -->
       <section class="info" id="info">
         <div class="container">
-          <h1 class="title visually-hidden">Дизайн-студия Nerds</h1>
+          <h1 class="main__title">Дизайн-студия Nerds</h1>
           <div class="info__content">
             <p class="info__slogan">
               <b>Мы — маленькая, но гордая дизайн-студия из Краснодара.</b>
             </p>
             <p class="info__text">Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем, не покладая рук, как роботы.</p>
             <h4 class="info__title">Выполняем заказы на разработку</h4>
-            <ul class="service-list">
-              <li class="service-item">Веб-сайтов люой сложности</li>
-              <li class="service-item">Мобильных приложений для iOS и Android</li>
-              <li class="service-item">Слайдшоу и видео для корпоративных презентаций</li>
+            <ul class="info__list">
+              <li class="info__item">Веб-сайтов люой сложности</li>
+              <li class="info__item">Мобильных приложений для iOS и Android</li>
+              <li class="info__item">Слайдшоу и видео для корпоративных презентаций</li>
             </ul>
           </div>
-          <div class="info__statistics">
+          <div class="stats">
             <h4 class="info__title">С 2004 года любим точность во всем</h4>
-            <table class="info__table">
-              <tr class="info__table-item">
+            <table class="stats__table">
+              <tr class="stats__table-item">
                 <th>146<sup>%</sup></th>
                 <td>Уровень самоотдачи</td>
               </tr>
-              <tr class="info__table-item">
+              <tr class="stats__table-item">
                 <th>100<sup>%</sup></th>
                 <td>Соблюдение сроков</td>
               </tr>
               <tr>
-                <th class="info__table-item">50<sup>%</sup></th>
+                <th class="stats__table-item">50<sup>%</sup></th>
                 <td>Минимальная предоплата</td>
               </tr>
             </table>
@@ -187,7 +193,7 @@
             </ul>
           </div>
           <div class="footer__promo">
-            <p class="footer__slogan"><b>Давайте дружить, это выгодно!</b>></p>
+            <p class="footer__slogan"><b>Давайте дружить, это выгодно!</b></p>
             <p class="footer__discount">Скидка 10% для друзей из социальных сетей.</p>
           </div>
         </div>
