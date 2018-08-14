@@ -9,15 +9,15 @@
     <!-- хедер -->
     <header class="main-header">
       <div class="container">
-        <a class="logo">
-          <img class="logo__img" href="#" src="#" alt="Nerds logo" width="160" height="65">
+        <a class="logo" href="index.html">
+          <img class="logo__img" src="img/nerds-logo.svg" alt="Nerds logo" width="160" height="65">
         </a>
         <nav class="main-header__nav">
           <ul>
-            <li><a href="#">Студия</a></li>
-            <li><a href="#">Клиенты</a></li>
-            <li><a>Магазин</a></li>
-            <li><a href="#">Контакты</a></li>
+            <li><a href="index.html">Студия</a></li>
+            <li><a href="index.html">Клиенты</a></li>
+            <li class="current-page"><a>Магазин</a></li>
+            <li><a href="index.html">Контакты</a></li>
           </ul>
         </nav>
         <a href="#" class="main-header__busket">Корзина</a>
@@ -42,8 +42,8 @@
               <div class="scale">
                 <div class="active-range"></div>
               </div>
-              <div class="toggle min-toggle"></div>
-              <div class="toggle max-toggle"></div>
+              <span class="toggle min-toggle"></span>
+              <span class="toggle max-toggle"></span>
             </div>
             <div class="price-control">
               <p>
@@ -54,6 +54,7 @@
               </p>
             </div>
           </div>
+          <!-- здесь будет форма -->
         </section>
         <!-- результаты поиска -->
         <section class="templates">
@@ -73,7 +74,7 @@
             </ul>
             <div class="sorting">
               <a href="#" class="sorting__icon sorting__icon--down sorting__icon--active"></a>
-              <a href="#" class="sorting__icon sorting__icon--up sorting__icon--active"></a>
+              <a href="#" class="sorting__icon sorting__icon--up"></a>
             </div>
           </div>
           <!-- шаблоны -->
@@ -84,7 +85,7 @@
                 <span></span>
                 <span></span>
               </div>
-              <img class="templates__item-img" src="" width="200" height="200" alt="Sedona">
+              <img class="templates__item-img" src="img/img-sedona.jpg" width="360" height="576" alt="Sedona">
               <div class="templates__item-content">
                 <p class="templates__item-title">Sedona</p>
                 <p class="templates__item-text">Информационный сайт для туристов</p>
@@ -97,10 +98,10 @@
                 <span></span>
                 <span></span>
               </div>
-              <img class="templates__item-img" src="" width="200" height="200" alt="Sedona">
+              <img class="templates__item-img" src="img/img-pink.jpg" width="360" height="576" alt="Pink">
               <div class="templates__item-content">
-                <p class="templates__item-title">Pink</p>
-                <p class="templates__item-text">Информационный сайт для туристов</p>
+                <p class="templates__item-title">Pink App</p>
+                <p class="templates__item-text">Продуктовый лендинг приложения для iOS и Android</p>
                 <a href="#" class="templates__item-price btn">9 900 руб.</a>
               </div>
             </article>
@@ -110,10 +111,10 @@
                 <span></span>
                 <span></span>
               </div>
-              <img class="templates__item-img" src="" width="200" height="200" alt="Sedona">
+              <img class="templates__item-img" src="img/img-barbershop.jpg" width="360" height="576" alt="Barbershop">
               <div class="templates__item-content">
-                <p class="templates__item-title">Barbershop Borodinski</p>
-                <p class="templates__item-text">Информационный сайт для туристов</p>
+                <p class="templates__item-title">Barbershop</p>
+                <p class="templates__item-text">Сайт салоны красоты. Для мужчин, да.</p>
                 <a href="#" class="templates__item-price btn">9 900 руб.</a>
               </div>
             </article>
@@ -123,10 +124,10 @@
                 <span></span>
                 <span></span>
               </div>
-              <img class="templates__item-img" src="" width="200" height="200" alt="Sedona">
+              <img class="templates__item-img" src="img/img-mishka.jpg" width="360" height="576" alt="Mishka">
               <div class="templates__item-content">
-                <p class="templates__item-title">магазин Мишка</p>
-                <p class="templates__item-text">Информационный сайт для туристов</p>
+                <p class="templates__item-title">Mishka</p>
+                <p class="templates__item-text">Интернет-магазин вязаных игрушек</p>
                 <a href="#" class="templates__item-price btn">9 900 руб.</a>
               </div>
             </article>
@@ -136,10 +137,10 @@
                 <span></span>
                 <span></span>
               </div>
-              <img class="templates__item-img" src="" width="200" height="200" alt="Sedona">
+              <img class="templates__item-img" src="img/img-aplus.jpg" width="360" height="576" alt="A+">
               <div class="templates__item-content">
-                <p class="templates__item-title">Курсы A+</p>
-                <p class="templates__item-text">Информационный сайт для туристов</p>
+                <p class="templates__item-title">A Plus</p>
+                <p class="templates__item-text">Лендинг курсов повышения квалификации</p>
                 <a href="#" class="templates__item-price btn">9 900 руб.</a>
               </div>
             </article>
@@ -149,23 +150,32 @@
                 <span></span>
                 <span></span>
               </div>
-              <img class="templates__item-img" src="" width="200" height="200" alt="Sedona">
+              <img class="templates__item-img" src="img/img-kvast.jpg" width="360" height="576" alt="Kvast">
               <div class="templates__item-content">
-                <p class="templates__item-title">квас Кваст</p>
-                <p class="templates__item-text">Информационный сайт для туристов</p>
+                <p class="templates__item-title">Кваст</p>
+                <p class="templates__item-text">Промо-сайт производителя крафтового кваса</p>
                 <a href="#" class="templates__item-price btn">9 900 руб.</a>
               </div>
             </article>
           </div>
           <!-- пагинация -->
-          <section class="pagination"></section>
+          <section class="pagination">
+            <ul>
+              <li class="pagination__item"><a class="pagination__link pagination__link--current">1</a></li>
+              <li class="pagination__item"><a href="#" class="pagination__link">2</a></li>
+              <li class="pagination__item"><a href="#" class="pagination__link">3</a></li>
+              <li class="pagination__item"><a href="#" class="pagination__link">Следующая</a></li>
+            </ul>
+          </section>
 
         </section>
       </section>
 
       <!-- контакты -->
       <section class="contacts">
-        <div class="contacts__map"></div>
+        <div class="contacts__map">
+          <img src="img/map.jpg" alt="ул. Б. Конюшенная, д. 19/8" class="contacts__map-img">
+        </div>
         <div class="contacts__content">
           <h4 class="contacts__title">Nёrds Design Studio</h4>
           <p class="contacts__address">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
