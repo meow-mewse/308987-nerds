@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>Дизайн-студия Нёрдс</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
 
@@ -97,7 +99,7 @@
                 </a>
                 <h3 class="service__item-title">Веб-сайты</h3>
                 <p class="service__text">Мир никогда не будет прежним после того, как увидит ваш сайт!</p>
-                <a class="btn service__btn" href="#" aria-label="Заказать веб-сайт">Заказать</a>
+                <a class="btn btn--sites" href="#" aria-label="Заказать веб-сайт">Заказать</a>
               </article>
             </li>
             <li class="service__item">
@@ -107,7 +109,7 @@
                 </a>
                 <h3 class="service__item-title">Приложения</h3>
                 <p class="service__text">Покорите топ-10 приложений в AppStore и Google Play</p>
-                <a class="btn service__btn" aria-label="Заказать приложение" href="#">Заказать</a>
+                <a class="btn btn--apps" aria-label="Заказать приложение" href="#">Заказать</a>
               </article>
             </li>
             <li class="service__item">
@@ -117,7 +119,7 @@
                 </a>
                 <h3 class="service__item-title">Презентации</h3>
                 <p class="service__text">Вы даже не представляете, насколько вы изумительны!</p>
-                <a class="btn service__btn" aria-label="Заказать презентацию" href="#">Заказать</a>
+                <a class="btn btn--presentations" aria-label="Заказать презентацию" href="#">Заказать</a>
               </article>
             </li>
           </ul>
@@ -164,7 +166,7 @@
           <h2 class="clients__title visually-hidden">Наши клиенты</h1>
           <ul class="clients__list">
             <li class="clients__item">
-              <a href="https://htmlacademy.ru/" class="clients__link" aria-label="Перейти на Html Академию">
+              <a href="https://htmlacademy.ru/intensive/htmlcss" class="clients__link" aria-label="Перейти на Html Академию">
                 <img class="clients__img" src="img/logo-1.png" alt="Html Academy" width="199" height="68">
               </a>
             </li>
@@ -202,6 +204,7 @@
         <!-- поп-ап -->
         <section class="feedback">
           <form action="get" class="feedback__form" action="https://echo.htmlacademy.ru">
+            <legend class="feedback__title">Напишите нам</legend>
             <p class="feedback__name">
               <label for="input-name">Ваше имя:</label>
               <input type="text" id="input-name" name="feedback-name" placeholder="Представьтесь, пожалуйста">
@@ -215,7 +218,7 @@
               <textarea id="input-message" name="feedback-message" placeholder="В свободной форме"></textarea>
             </p>
             <div class="feedback__buttons">
-              <button class="feedback__submit" type="submit" name="feedback-submit">Отправить</button>
+              <button class="feedback__submit btn" type="submit" name="feedback-submit">Отправить</button>
             </div>
             <button class="feedback__close" type="button">Закрыть</button>
           </form>
@@ -242,7 +245,8 @@
         </div>
         <div class="footer__promo">
           <p class="footer__slogan">Давайте дружить, это выгодно!</p>
-          <p class="footer__discount">Скидка 10% для друзей из социальных сетей.</p>
+          <p class="
+          ">Скидка 10% для друзей из социальных сетей.</p>
         </div>
       </div>
     </footer>

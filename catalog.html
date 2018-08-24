@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
 
@@ -47,7 +49,7 @@
         <!-- фильтр поиска -->
         <div class="container">
           <section class="filters">
-            <h2 class="visually__hidden filter__title">Фильтр готовых шаблонов</h2>
+            <h2 class="visually-hidden filter__title">Фильтр готовых шаблонов</h2>
             <!-- форма фильтра -->
             <form method="get" class="filter" action="https://echo.htmlacademy.ru">
               <fieldset class="filter__price">
@@ -120,7 +122,7 @@
               <p class="templates__nav-title">Сортировать</p>
               <ul class="templates__nav-list">
                 <li class="templates__nav-item">
-                  <a href="#" class="templates__nav-link">по цене</a>
+                  <a href="#" class="templates__nav-link templates__nav-link--active">по цене</a>
                 </li>
                 <li class="templates__nav-item">
                   <a href="#" class="templates__nav-link">по типу</a>
@@ -229,7 +231,7 @@
             </div>
             <!-- пагинация -->
             <section class="pagination">
-              <ul>
+              <ul class="pagination__list">
                 <li class="pagination__item">
                   <a class="pagination__link pagination__link--current">1</a>
                 </li>

@@ -1,0 +1,272 @@
+/*шрифты*/
+
+
+/* roboto-regular - cyrillic_latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Roboto'), local('Roboto-Regular'),
+       url('../fonts/robotoroboto-v18-cyrillic_latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/robotoroboto-v18-cyrillic_latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* roboto-500 - cyrillic_latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  src: local('Roboto Medium'), local('Roboto-Medium'),
+       url('../fonts/robotoroboto-v18-cyrillic_latin-500.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/robotoroboto-v18-cyrillic_latin-500.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* roboto-700 - cyrillic_latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Roboto Bold'), local('Roboto-Bold'),
+       url('../fonts/robotoroboto-v18-cyrillic_latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/robotoroboto-v18-cyrillic_latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", "Tahoma", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #283136;
+  background-color: #fff;
+}
+
+a {
+  text-decoration: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.main-header {
+  background-color: #eee;
+}
+
+.main-header a {
+  font-family: "Roboto Medium", "Tahoma", sans-serif;
+  line-height: 30px;
+  font-weight: 500;
+  color: #000;
+  text-transform: uppercase;
+}
+
+.main-nav__list,
+.slider__switches-list,
+.service__list,
+.clients__list,
+.social__list,
+.info__list,
+.filter__grid-list,
+.filter__features-list,
+.templates__nav-list,
+.pagination__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.slider,
+.welcome-block {
+  background-color: #eee;
+}
+
+.welcome-block__title {
+  margin: 0;
+}
+
+fieldset {
+  border: none;
+}
+
+.filter legend,
+.templates__nav-title {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #000;
+}
+
+.price-control {
+  line-height: 22px;
+  text-transform: uppercase;
+}
+
+.filter label {
+  line-height: 20px;
+}
+
+.templates__item-content {
+  background-color: #eee;
+}
+
+.templates__item-title {
+  line-height: 30px;
+  font-weight: bold;
+  color: #000;
+}
+
+.templates__item-text {
+  line-height: 18px;
+  color: #666;
+}
+
+.templates__item-price {
+  background-color: #fb565a;
+}
+
+.slider__item-slogan {
+  margin: 0;
+  font-family: "Roboto Medium", "Tahoma", sans-serif;
+  font-size: 55px;
+  line-height: 55px;
+  color: #000;
+}
+
+.slider__item-btn {
+  background-color: #fb565a;
+}
+
+.btn,
+.feedback__submit {
+  font-family: "Roboto Medium", "Tahoma", sans-serif;
+  font-weight: normal;
+  line-height: 18px;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.filter__button {
+  font-family: "Roboto Medium", "Tahoma", sans-serif;
+  color: #000;
+  background-color: #eee;
+}
+
+.service__item-title {
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #000;
+}
+
+.btn--sites {
+  background-color: #fb565a;
+}
+
+.btn--apps {
+  background-color: #00ca74;
+}
+
+.btn--presentations {
+  background-color: #efc84a;
+}
+
+.info__slogan {
+  font-size: 45px;
+  line-height: 45px;
+  color: #000;
+}
+
+.info__title {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+th {
+  font-weight: 700;
+  color: #000;
+  font-size: 45px;
+  line-height: 10.06px;
+}
+
+sup {
+  font-style: 27px;
+}
+
+td {
+  line-height: 18px;
+}
+
+.contacts__content {
+  background-color: #fff;
+}
+
+.contacts__title {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  color: #000;
+}
+
+.contacts__btn {
+  background-color: #fb565a;
+
+}
+
+.contacts__content p,
+.contacts__phone {
+  line-height: 18px;
+  color: #666;
+}
+
+.feedback {
+  background-color: #fff;
+}
+
+.feedback__title {
+  font-size: 45px;
+  line-height: 45px;
+  font-weight: bold;
+  color: #000;
+}
+
+.feedback label {
+  font-weight: bold;
+  line-height: 18px;
+}
+
+.feedback__submit {
+  background-color: #fb565a;
+}
+
+.footer__slogan {
+  color: #000;
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 700;
+}
+
+.footer__discount {
+  line-height: 22px;
+}
+
+
+
+
+
