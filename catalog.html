@@ -22,11 +22,11 @@
             <li class="main-nav__item">
               <a class="main-nav__link" href="index.html">Клиенты</a>
             </li>
-            <li class="main-nav__item main-nav__item--current">
-              <a class="main-nav__link">Магазин</a>
+            <li class="main-nav__item">
+              <a class="main-nav__link main-nav__link--current">Магазин</a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__link" href="index.html">Контакты</a>
+              <a class="main-nav__link" href="#contacts">Контакты</a>
             </li>
           </ul>
         </nav>
@@ -53,25 +53,23 @@
             <!-- форма фильтра -->
             <form method="get" class="filter" action="https://echo.htmlacademy.ru">
               <fieldset class="filter__price">
-                <legend>Стоимость</legend>
-                <div class="filter__price-range">
-                  <div class="filter__price-scale">
-                    <div class="filter__price-active"></div>
+                <legend>Стоимость:</legend>
+                <div class="range-filter">
+                  <div class="range-controls">
+                    <div class="scale">
+                      <div class="bar"></div>
+                    </div>
+                    <div class="toggle toggle-min"></div>
+                    <div class="toggle toggle-max"></div>
                   </div>
-                  <span class="toggle min-toggle"></span>
-                  <span class="toggle max-toggle"></span>
-                </div>
-                <div class="price-control">
-                  <p>
-                    от
-                    <input class="min-price" type="text" value="0">
-                    до
-                    <input class="max-price" type="text" value="15 000">
-                  </p>
+                  <div class="price-controls">
+                    <label class="min-price">от <input name="min-price" type="text" value="0"></label>
+                    <label class="max-price">до <input name="max-price" type="text" value="15000"></label>
+                  </div>
                 </div>
               </fieldset>
               <fieldset class="filter__grid">
-                <legend>Сетка</legend>
+                <legend>Сетка:</legend>
                 <ul class="filter__grid-list">
                   <li class="filter__grid-item">
                     <input type="radio" class="visually-hidden filter__radio" name="grid-types" value="adaptive" id="adaptive__radio" checked>
@@ -88,15 +86,15 @@
                 </ul>
               </fieldset>
               <fieldset class="filter__features">
-                <legend>Особенности</legend>
+                <legend>Особенности:</legend>
                 <ul class="filter__features-list">
                   <li class="filter__features-item">
                     <input type="checkbox" class="visually-hidden filter__checkbox" name="slider" id="slider-checkbox" checked>
-                    <label for="slider__checkbox">Слайдер</label>
+                    <label for="slider-checkbox">Слайдер</label>
                   </li>
                   <li class="filter__features-item">
                     <input type="checkbox" class="visually-hidden filter__checkbox" name="features-block" id="features-block__checkbox">
-                    <label for="slider-checkbox">Блок преимуществ</label>
+                    <label for="features-block__checkbox">Блок преимуществ</label>
                   </li>
                   <li class="filter__features-item">
                     <input type="checkbox" class="visually-hidden filter__checkbox" name="news" id="news__checkbox" checked>
@@ -119,10 +117,10 @@
           <section class="templates">
             <!-- сортировка результатов -->
             <div class="templates__nav">
-              <p class="templates__nav-title">Сортировать</p>
+              <p class="templates__nav-title">Сортировать:</p>
               <ul class="templates__nav-list">
                 <li class="templates__nav-item">
-                  <a href="#" class="templates__nav-link templates__nav-link--active">по цене</a>
+                  <a class="templates__nav-link templates__nav-link--active">по цене</a>
                 </li>
                 <li class="templates__nav-item">
                   <a href="#" class="templates__nav-link">по типу</a>
@@ -132,7 +130,7 @@
                 </li>
               </ul>
               <div class="sorting">
-                <a href="#" class="sorting__icon sorting__icon--down sorting__icon--active"></a>
+                <a class="sorting__icon sorting__icon--down  sorting__icon--active"></a>
                 <a href="#" class="sorting__icon sorting__icon--up"></a>
               </div>
             </div>
@@ -140,147 +138,129 @@
             <div class="templates__items">
               <article class="templates__item">
                 <a href="#" class="templates__link">
-                  <div class="templates__item-header">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                  </div>
                   <img class="templates__item-img" src="img/img-sedona.jpg" width="360" height="576" alt="Sedona">
                   <div class="templates__item-content">
-                    <p class="templates__item-title">Sedona</p>
-                    <p class="templates__item-text">Информационный сайт для туристов</p>
-                    <a href="#" class="templates__item-price btn" aria-label="купить">9 900 руб.</a>
+                    <div class="templates__item-wrapper">
+                      <p class="templates__item-title">Sedona</p>
+                      <p class="templates__item-text">Информационный сайт<br>для туристов</p>
+                      <a href="#" class="templates__item-price btn" aria-label="купить">9 900 руб.</a>
+                    </div>
                   </div>
                 </a>
               </article>
               <article class="templates__item">
                 <a href="#" class="templates__link">
-                  <div class="templates__item-header">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                  </div>
                   <img class="templates__item-img" src="img/img-pink.jpg" width="360" height="576" alt="Pink">
                   <div class="templates__item-content">
-                    <p class="templates__item-title">Pink App</p>
-                    <p class="templates__item-text">Продуктовый лендинг приложения для iOS и Android</p>
-                    <a href="#" class="templates__item-price btn" aria-label="купить">9 900 руб.</a>
+                    <div class="templates__item-wrapper">
+                      <p class="templates__item-title">Pink App</p>
+                      <p class="templates__item-text">Продуктовый лендинг приложения для iOS и Android</p>
+                      <a href="#" class="templates__item-price btn" aria-label="купить">9 900 руб.</a>
+                    </div>
                   </div>
                 </a>
               </article>
               <article class="templates__item">
                 <a href="#" class="templates__link">
-                  <div class="templates__item-header">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                  </div>
                   <img class="templates__item-img" src="img/img-barbershop.jpg" width="360" height="576" alt="Barbershop">
                   <div class="templates__item-content">
-                    <p class="templates__item-title">Barbershop</p>
-                    <p class="templates__item-text">Сайт салоны красоты. Для мужчин, да.</p>
-                    <a href="#" class="templates__item-price btn" aria-label="купить">9 900 руб.</a>
+                    <div class="templates__item-wrapper">
+                      <p class="templates__item-title">Barbershop</p>
+                      <p class="templates__item-text">Сайт салоны красоты.<br> Для мужчин, да.</p>
+                      <a href="#" class="templates__item-price btn" aria-label="купить">9 900 руб.</a>
+                    </div>
                   </div>
                 </a>
               </article>
               <article class="templates__item">
                 <a href="#" class="templates__link">
-                  <div class="templates__item-header">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                  </div>
                   <img class="templates__item-img" src="img/img-mishka.jpg" width="360" height="576" alt="Mishka">
                   <div class="templates__item-content">
-                    <p class="templates__item-title">Mishka</p>
-                    <p class="templates__item-text">Интернет-магазин вязаных игрушек</p>
-                    <a href="#" class="templates__item-price btn" aria-label="купить">9 900 руб.</a>
+                    <div class="templates__item-wrapper">
+                      <p class="templates__item-title">Mishka</p>
+                      <p class="templates__item-text">Интернет-магазин<br>вязаных игрушек</p>
+                      <a href="#" class="templates__item-price btn" aria-label="купить">9 900 руб.</a>
+                    </div>
                   </div>
                 </a>
               </article>
               <article class="templates__item">
                 <a href="#" class="templates__link">
-                  <div class="templates__item-header">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                  </div>
                   <img class="templates__item-img" src="img/img-aplus.jpg" width="360" height="576" alt="A+">
                   <div class="templates__item-content">
-                    <p class="templates__item-title">A Plus</p>
-                    <p class="templates__item-text">Лендинг курсов повышения квалификации</p>
-                    <a href="#" class="templates__item-price btn" aria-label="купить">9 900 руб.</a>
+                    <div class="templates__item-wrapper">
+                      <p class="templates__item-title">A Plus</p>
+                      <p class="templates__item-text">Лендинг&nbsp;курсов&nbsp;повышения квалификации</p>
+                      <a href="#" class="templates__item-price btn" aria-label="купить">9 900 руб.</a>
+                    </div>
                   </div>
                 </a>
               </article>
               <article class="templates__item">
                 <a href="#" class="templates__link">
-                  <div class="templates__item-header">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                  </div>
                   <img class="templates__item-img" src="img/img-kvast.jpg" width="360" height="576" alt="Kvast">
                   <div class="templates__item-content">
-                    <p class="templates__item-title">Кваст</p>
-                    <p class="templates__item-text">Промо-сайт производителя крафтового кваса</p>
-                    <a href="#" class="templates__item-price btn" aria-label="купить">9 900 руб.</a>
+                    <div class="templates__item-wrapper">
+                      <p class="templates__item-title">Кваст</p>
+                      <p class="templates__item-text">Промо-сайт производителя крафтового кваса</p>
+                      <a href="#" class="templates__item-price btn" aria-label="купить">9 900 руб.</a>
+                    </div>
                   </div>
                 </a>
               </article>
             </div>
             <!-- пагинация -->
-            <section class="pagination">
-              <ul class="pagination__list">
-                <li class="pagination__item">
-                  <a class="pagination__link pagination__link--current">1</a>
-                </li>
-                <li class="pagination__item">
-                  <a href="#" class="pagination__link" aria-label="Вторая страница каталога">2</a>
-                </li>
-                <li class="pagination__item">
-                  <a href="#" class="pagination__link" aria-label="Третья страница каталога">3</a>
-                </li>
-                <li class="pagination__item">
-                  <a href="#" class="pagination__link btn" aria-label="Следующая страница каталога">Следующая</a>
-                </li>
-              </ul>
-            </section>
+            <ul class="pagination__list">
+              <li class="pagination__item">
+                <a class="pagination__link pagination__link--current">1</a>
+              </li>
+              <li class="pagination__item">
+                <a href="#" class="pagination__link" aria-label="Вторая страница каталога">2</a>
+              </li>
+              <li class="pagination__item">
+                <a href="#" class="pagination__link" aria-label="Третья страница каталога">3</a>
+              </li>
+              <li class="pagination__item">
+                <a href="#" class="pagination__link pagination__link--next" aria-label="Следующая страница каталога">Следующая</a>
+              </li>
+            </ul>
+
           </section>
         </div>
       </section>
 
       <!-- контакты -->
-      <section class="contacts">
+      <section class="contacts" id="contacts">
         <h2 class="contacts__title visually-hidden">Как до нас добраться</h2>
         <div class="contacts__map">
-          <img class="contacts__map-img" src="img/map.jpg" alt="Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.603625300312!2d30.32085871615871!3d59.93871916905415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1536000848274" width="100%" height="100%" frameborder="0" alt="Санкт-Петербург, ул. Б. Конюшенная, д. 19/8" style="border:0" allowfullscreen></iframe>
         </div>
-        <div class="container">
-          <div class="contacts__content">
-            <h4 class="contacts__title">Nёrds Design Studio</h4>
-            <p class="contacts__address">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-            <p>тел. <a class="contacts__phone" href="tel:+78122757575">+7 (812) 275-75-75</a></p>
-            <a href="#" class="contacts__btn btn">Напишите нам</a>
-          </div>
+        <div class="contacts__content">
+          <h4 class="contacts__title">Nёrds Design Studio</h4>
+          <p class="contacts__address">191186, Санкт-Петербург,<br> ул. Б. Конюшенная, д. 19/8</p>
+          <p class="contacts__phone-text">тел. <a class="contacts__phone" href="tel:+78122757575">+7 (812) 275-75-75</a></p>
+          <a href="#" class="contacts__btn btn">Напишите нам</a>
         </div>
         <!-- поп-ап -->
-        <section class="feedback">
+        <section class="modal feedback">
           <form action="get" class="feedback__form" action="https://echo.htmlacademy.ru">
-            <p class="feedback__name">
-              <label for="input-name">Ваше имя:</label>
-              <input type="text" id="input-name" name="feedback-name" placeholder="Представьтесь, пожалуйста">
-            </p>
-            <p class="feedback__email">
-              <label for="input-email">Ваш e-mail:</label>
-              <input type="email" id="input-email" name="feedback-email" placeholder="Для отправки ответа">
-            </p>
+            <legend class="feedback__title">Напишите нам</legend>
+            <div class="feedback__wrap">
+              <p class="feedback__name">
+                <label for="input-name">Ваше имя:</label>
+                <input type="text" class="input input-name" id="input-name" name="feedback-name" placeholder="Представьтесь, пожалуйста">
+              </p>
+              <p class="feedback__email">
+                <label for="input-email">Ваш e-mail:</label>
+                <input type="email" class="input input-email" id="input-email" name="feedback-email" placeholder="Для отправки ответа">
+              </p>
+            </div>
             <p class="feedback__message">
               <label for="input-message">Текст письма:</label>
-              <textarea id="input-message" name="feedback-message" placeholder="В свободной форме"></textarea>
+              <textarea class="input" id="input-message" rows="5" name="feedback-message" placeholder="В свободной форме"></textarea>
             </p>
             <div class="feedback__buttons">
-              <button class="feedback__submit" type="submit" name="feedback-submit">Отправить</button>
+              <button class="feedback__submit btn" type="submit" name="feedback-submit">Отправить</button>
             </div>
             <button class="feedback__close" type="button">Закрыть</button>
           </form>
@@ -295,13 +275,19 @@
         <div class="social">
           <ul class="social__list">
             <li class="social__item">
-              <a href="#" class="social__btn social-btn--vk" aria-label="Мы в Вконтакте">Вконтакте</a>
+              <a href="#" class="social__btn" aria-label="Мы в Вконтакте">
+                <img class="social__btn-img social__btn-img--vk" src="img/vk-icon.svg" width="26" height="15" alt="Вконтакте">
+              </a>
             </li>
             <li class="social__item">
-              <a href="#" class="social__btn social-btn--fb" aria-label="Добавляйтесь на Фейсбуке">Facebook</a>
+              <a href="#" class="social__btn" aria-label="Добавляйтесь на Фейсбуке">
+                <img class="social__btn-img social__btn-img--fb" src="img/fb-icon.svg" width="12" height="22" alt="Фейсбук">
+              </a>
             </li>
             <li class="social__item">
-              <a href="#" class="social__btn social-btn--insta" aria-label="Наш инстаграм">Instagram</a>
+              <a href="#" class="social__btn" aria-label="Наш инстаграм">
+                <img class="social__btn-img social__btn-img--insta" src="img/insta-icon.svg" width="21" height="21"  alt="Инстаграм">
+              </a>
             </li>
           </ul>
         </div>
