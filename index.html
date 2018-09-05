@@ -191,14 +191,16 @@
       <!-- контакты -->
       <section class="contacts" id="contacts">
         <h2 class="contacts__title visually-hidden">Как до нас добраться</h2>
+        <div class="container">
+          <div class="contacts__content">
+            <h4 class="contacts__title">Nёrds Design Studio</h4>
+            <p class="contacts__address">191186, Санкт-Петербург,<br> ул. Б. Конюшенная, д. 19/8</p>
+            <p class="contacts__phone-text">тел. <a class="contacts__phone" href="tel:+78122757575">+7 (812) 275-75-75</a></p>
+            <a class="contacts__btn btn" href="#">Напишите нам</a>
+          </div>
+        </div>
         <div class="contacts__map">
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.603625300312!2d30.32085871615871!3d59.93871916905415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1536000848274" style="border:0" allowfullscreen></iframe>
-        </div>
-        <div class="contacts__content">
-          <h4 class="contacts__title">Nёrds Design Studio</h4>
-          <p class="contacts__address">191186, Санкт-Петербург,<br> ул. Б. Конюшенная, д. 19/8</p>
-          <p class="contacts__phone-text">тел. <a class="contacts__phone" href="tel:+78122757575">+7 (812) 275-75-75</a></p>
-          <a class="contacts__btn btn" href="#">Напишите нам</a>
         </div>
         <!-- поп-ап -->
         <section class="modal feedback">
@@ -207,19 +209,19 @@
             <div class="feedback__wrap">
               <p class="feedback__name">
                 <label for="input-name">Ваше имя:</label>
-                <input class="input input-name" type="text" id="input-name" name="feedback-name" placeholder="Представьтесь, пожалуйста" required>
+                <input class="input input-name" type="text" id="input-name" value="" name="feedback-name" placeholder="Представьтесь, пожалуйста">
               </p>
               <p class="feedback__email">
                 <label for="input-email">Ваш e-mail:</label>
-                <input class="input input-email" type="email" id="input-email" name="feedback-email" placeholder="Для отправки ответа" required>
+                <input class="input input-email" type="email" id="input-email" name="feedback-email" placeholder="Для отправки ответа">
               </p>
             </div>
             <p class="feedback__message">
               <label for="input-message">Текст письма:</label>
-              <textarea class="input" id="input-message" rows="5" name="feedback-message" placeholder="В свободной форме" required></textarea>
+              <textarea class="input" id="input-message" rows="5" value="" name="feedback-message" placeholder="В свободной форме"></textarea>
             </p>
             <div class="feedback__buttons">
-              <button class="feedback__submit btn" type="submit" name="feedback-submit">Отправить</button>
+              <button class="feedback__submit btn" type="submit" value="" name="feedback-submit">Отправить</button>
             </div>
             <button class="feedback__close" type="button">Закрыть</button>
           </form>
@@ -256,6 +258,8 @@
         </div>
       </div>
     </footer>
+
+    <script src="js/script.js"></script>
 
   </body>
 </html>
