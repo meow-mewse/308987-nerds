@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>Студия Нёрдс - магазин</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
@@ -15,7 +15,7 @@
         <a class="logo" href="index.html">
           <img class="logo__img" src="img/nerds-logo.svg" alt="дизайн-студия Nerds" width="160" height="65">
         </a>
-        <nav class="main-nav">
+        <nav class="main-nav" aria-label="Меню навигации">
           <ul class="main-nav__list">
             <li class="main-nav__item">
               <a class="main-nav__link" href="index.html">Студия</a>
@@ -133,8 +133,8 @@
                 </li>
               </ul>
               <div class="sorting">
-                <a class="sorting__icon sorting__icon--down  sorting__icon--active"></a>
-                <a class="sorting__icon sorting__icon--up" href="#"></a>
+                <a class="sorting__icon sorting__icon--down  sorting__icon--active"><span class="visually-hidden">По убыванию</span></a>
+                <a class="sorting__icon sorting__icon--up" href="#"><span class="visually-hidden">По убыванию</span></a>
               </div>
             </div>
             <!-- шаблоны -->
@@ -227,7 +227,7 @@
             <!-- пагинация -->
             <ul class="pagination__list">
               <li class="pagination__item">
-                <a class="pagination__link pagination__link--current">1</a>
+                <a class="pagination__link pagination__link--current" aria-label="Текущая страница каталога">1</a>
               </li>
               <li class="pagination__item">
                 <a class="pagination__link" href="#" aria-label="Вторая страница каталога">2</a>
@@ -250,12 +250,13 @@
         <div class="container">
           <div class="contacts__content">
             <h4 class="contacts__title">Nёrds Design Studio</h4>
-            <p class="contacts__address">191186, Санкт-Петербург,<br> ул. Б. Конюшенная, д. 19/8</p>
+            <p class="contacts__address">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
             <p class="contacts__phone-text">тел. <a class="contacts__phone" href="tel:+78122757575">+7 (812) 275-75-75</a></p>
             <a class="contacts__btn btn" href="#">Напишите нам</a>
           </div>
         </div>
         <div class="contacts__map">
+          <span class="visually-hidden">Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span>
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.603625300312!2d30.32085871615871!3d59.93871916905415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1536000848274" style="border:0" allowfullscreen></iframe>
         </div>
         <!-- поп-ап -->
@@ -315,7 +316,6 @@
       </div>
     </footer>
 
-    <script src="js/script.js"></script>
     <script src="js/script.min.js"></script>
 
   </body>

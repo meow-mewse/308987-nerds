@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>Студия Нёрдс</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
@@ -15,7 +15,7 @@
         <a class="logo logo--active">
           <img class="logo__img" src="img/nerds-logo.svg" alt="дизайн-студия Nerds" width="160" height="65">
         </a>
-        <nav class="main-nav">
+        <nav class="main-nav" aria-label="Меню навигации">
           <ul class="main-nav__list">
             <li class="main-nav__item">
               <a class="main-nav__link" href="#info">Студия</a>
@@ -57,7 +57,7 @@
                 <p class="slider__item-slogan">
                   <b>Долго, дорого, скрупулезно.</b>
                 </p>
-                <p class="slider__item-text">Математически выверенный дизайн<br> для вашего сайта или мобильного приложения.</p>
+                <p class="slider__item-text">Математически выверенный дизайн<br> для вашего сайта или мобильного  приложения.</p>
                 <a class="slider__item-btn btn" href="#">Узнать больше</a>
               </div>
             </li>
@@ -65,9 +65,9 @@
             <li class="slider__item slider__item--maths">
               <div class="slider__item-content">
                 <p class="slider__item-slogan">
-                  <b>Любим&nbsp;математику<br>как никто другой</b>
+                  <b>Любим&nbsp;математику как никто другой</b>
                 </p>
-                <p class="slider__item-text">Никакого креатива, только математические формулы<br> для расчета идеальных пропорций.</p>
+                <p class="slider__item-text">Никакого креатива, только математические формулы  для расчета идеальных пропорций.</p>
                 <a class="slider__item-btn btn" href="#">Узнать больше</a>
               </div>
             </li>
@@ -96,7 +96,7 @@
                   <img class="service__img" src="img/illustration-1.png" width="300" height="146" alt="Веб-сайты" >
                 </a>
                 <h3 class="service__item-title">Веб-сайты</h3>
-                <p class="service__text">Мир никогда не будет прежним после того, как увидит ваш сайт!</p>
+                <p class="service__text service__text--sites">Мир никогда не будет прежним после того как увидит ваш сайт!</p>
                 <a class="btn service__btn btn--sites" href="#" aria-label="Заказать веб-сайт">Заказать</a>
               </article>
             </li>
@@ -106,7 +106,7 @@
                   <img class="service__img" src="img/illustration-2.png" width="300" height="146" alt="Приложения">
                 </a>
                 <h3 class="service__item-title">Приложения</h3>
-                <p class="service__text">Покорите топ-10 приложений в AppStore и Google Play</p>
+                <p class="service__text service__text--apps">Покорите топ-10 приложений в AppStore и Google Play</p>
                 <a class="btn service__btn btn--apps" aria-label="Заказать приложение" href="#">Заказать</a>
               </article>
             </li>
@@ -116,7 +116,7 @@
                   <img class="service__img" src="img/illustration-3.png" width="300" height="146" alt="Презентации">
                 </a>
                 <h3 class="service__item-title">Презентации</h3>
-                <p class="service__text">Вы даже не подозреваете, насколько вы изумительны!</p>
+                <p class="service__text service__text--presentation">Вы даже не подозреваете, насколько вы изумительны!</p>
                 <a class="btn service__btn btn--presentations" aria-label="Заказать презентацию" href="#">Заказать</a>
               </article>
             </li>
@@ -133,7 +133,7 @@
               <p class="info__slogan">
                 <b>Мы — маленькая, но гордая дизайн-студия из Краснодара.</b>
               </p>
-              <p class="info__text">Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем, не покладая рук, как роботы.</p>
+              <p class="info__text">Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
               <h4 class="info__title">Выполняем заказы на разработку:</h4>
               <ul class="info__list">
                 <li class="info__item">Веб-сайтов любой сложности</li>
@@ -195,7 +195,7 @@
         <div class="container">
           <div class="contacts__content">
             <h4 class="contacts__title">Nёrds Design Studio</h4>
-            <p class="contacts__address">191186, Санкт-Петербург,<br> ул. Б. Конюшенная, д. 19/8</p>
+            <p class="contacts__address">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
             <p class="contacts__phone-text">тел. <a class="contacts__phone" href="tel:+78122757575">+7 (812) 275-75-75</a></p>
             <a class="contacts__btn btn" href="#">Напишите нам</a>
           </div>
@@ -210,11 +210,11 @@
             <div class="feedback__wrap">
               <p class="feedback__name">
                 <label for="input-name">Ваше имя:</label>
-                <input class="input input-name" type="text" id="input-name" value="" name="feedback-name" placeholder="Представьтесь, пожалуйста">
+                <input class="input input-name" type="text" id="input-name" value="name" name="feedback-name" placeholder="Представьтесь, пожалуйста">
               </p>
               <p class="feedback__email">
                 <label for="input-email">Ваш e-mail:</label>
-                <input class="input input-email" type="email" id="input-email" name="feedback-email" placeholder="Для отправки ответа">
+                <input class="input input-email" type="email" id="input-email" value="email" name="feedback-email" placeholder="Для отправки ответа">
               </p>
             </div>
             <p class="feedback__message">
@@ -222,7 +222,7 @@
               <textarea class="input" id="input-message" rows="5" name="feedback-message" placeholder="В свободной форме"></textarea>
             </p>
             <div class="feedback__buttons">
-              <button class="feedback__submit btn" type="submit" value="" name="feedback-submit">Отправить</button>
+              <button class="feedback__submit btn" type="submit" value="submit" name="feedback-submit">Отправить</button>
             </div>
             <button class="feedback__close" type="button">Закрыть</button>
           </form>
@@ -248,7 +248,7 @@
             </li>
             <li class="social__item">
               <a class="social__btn" href="#" aria-label="Наш инстаграм">
-                <img class="social__btn-img social__btn-img--insta" src="img/insta-icon.svg" width="21" height="21"  alt="Инстаграм">
+                <img class="social__btn-img social__btn-img--insta" src="img/insta-icon.svg" width="21" height="21" alt="Инстаграм">
               </a>
             </li>
           </ul>
@@ -260,7 +260,6 @@
       </div>
     </footer>
 
-    <script src="js/script.js"></script>
     <script src="js/script.min.js"></script>
 
   </body>
